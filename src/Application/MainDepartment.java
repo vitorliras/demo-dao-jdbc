@@ -80,12 +80,11 @@ public class MainDepartment {
 		System.out.println("Do you really want to update the name department? 1-Yes/ 2-No");
 		int n = sc.nextInt();
 		if(n == 1) {
-			System.out.println("Enter the department name: ");
+			System.out.println("Enter new the department name: ");
 			String name = sc.next();
 			System.out.println("Enter id for update: ");
 			int id = sc.nextInt();
 			department = departmentDao.fidnById(id);
-			System.out.println("Enter the new department name: ");
 			department.setName(name);
 			departmentDao.update(department);
 			System.out.println("Update Completed");

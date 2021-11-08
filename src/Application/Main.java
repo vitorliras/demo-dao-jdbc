@@ -35,7 +35,7 @@ public class Main {
 				break;
 			}
 			default:
-				System.out.println("Type the correct option!");
+				System.out.println();
 				break;
 			}
 		}while(option != 0);
